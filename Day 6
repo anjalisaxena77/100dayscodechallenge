@@ -22,4 +22,4 @@ private void extendPalindrome(String s, int j, int k) {
 		lo = j + 1;
 		maxLen = k - j - 1;
 	}
-}}
+}

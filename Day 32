@@ -1,0 +1,38 @@
+class Solution {
+    public List<List<Integer>> fourSum(int[] nums, int target) {
+        List<List<Integer>> ans = new ArrayList<>();
+        
+
+        Arrays.sort(nums);
+
+        for (int i = 0; i < nums.length; i++) {
+            for (int j = i + 1; j < nums.length; j++) {
+
+                long target2 = (long) target - (long) nums[i] - (long) nums[j];
+                int lower = j + 1, higher = nums.length - 1;
+
+                while (lower < higher) {
+                    int twoSum = nums[lower] + nums[higher];
+
+                    if (twoSum < target2) lower++;
+                    else if (twoSum > target2) higher--;
+                    else {
+                        List<Integer> quad = Arrays.asList(nums[i], nums[j], nums[lower], nums[higher]);
+                        ans.add(quad);
+
+                        while (lower < higher && nums[lower] == quad.get(2)) lower++;
+                        while (lower < higher && nums[higher] == quad.get(3)) higher--;
+                    }
+                }
+
+                while (j + 1 < nums.length && nums[j] == nums[j + 1]) j++;
+            }
+
+            while (i + 1 < nums.length && nums[i] == nums[i + 1]) i++;
+        }
+
+        return ans;
+    }
+}
+        
+    

@@ -1,0 +1,30 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+         Scanner input = new Scanner(System.in);
+    String a = input.next();
+    String b = input.next();
+    String reverseA = "";
+    for(int i = a.length()-1;i>=0;i--){
+        reverseA+=a.charAt(i);
+    }
+    String reverseLowerCaseA = reverseA.toLowerCase();
+    String lowerCaseA = a.toLowerCase();
+    String lowerCaseB = b.toLowerCase();
+    char tempA[] = lowerCaseA.toCharArray();
+    char tempB[] = lowerCaseB.toCharArray();
+    Arrays.sort(tempA);
+    Arrays.sort(tempB);
+    if(reverseLowerCaseA.equals(lowerCaseB) || lowerCaseA.equals(lowerCaseB) || Arrays.equals(tempA,tempB) ){
+        System.out.println("Anagrams");
+    }else{
+        System.out.println("Not Anagrams");
+    }
+
+
+    }
+}

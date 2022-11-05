@@ -1,4 +1,4 @@
-Question: Given an integer array nums and an integer val, remove all occurrences of val in nums in-place. The relative order of the elements may be changed.
+/* Question: Given an integer array nums and an integer val, remove all occurrences of val in nums in-place. The relative order of the elements may be changed.
 Example 1:
 
 Input: nums = [3,2,2,3], val = 3
@@ -18,7 +18,7 @@ Constraints:
 
 0 <= nums.length <= 100
 0 <= nums[i] <= 50
-0 <= val <= 100
+0 <= val <= 100 */
 
 
 Solution: 

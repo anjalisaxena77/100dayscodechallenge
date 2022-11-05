@@ -1,4 +1,4 @@
-Question: Given an integer x, return true if x is a 
+/*Question: Given an integer x, return true if x is a 
 palindrome, and false otherwise.
 
  Example 1:
@@ -20,7 +20,7 @@ Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
 
 Constraints:
 
--231 <= x <= 231 - 1
+-231 <= x <= 231 - 1 */
 
 
 Solution: 

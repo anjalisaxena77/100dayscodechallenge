@@ -1,3 +1,21 @@
+ /* Question:
+ Sam's house has an apple tree and an orange tree that yield an abundance of fruit. Using the information given below, determine the number of apples and oranges that land on Sam's house.
+ Sample Input 0
+
+7 11
+5 15
+3 2
+-2 2 1
+5 -6
+Sample Output 0
+
+1
+1
+ 
+ 
+ 
+ */
+Solution:
 import java.io.*;
 import java.math.*;
 import java.security.*;

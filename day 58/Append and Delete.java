@@ -1,3 +1,20 @@
+/* Question:
+ You have two strings of lowercase English letters. You can perform two types of operations on the first string:
+
+Append a lowercase English letter to the end of the string.
+Delete the last character of the string. Performing this operation on an empty string results in an empty string.
+Sample Input 0
+
+hackerhappy
+hackerrank
+9
+Sample Output 0
+
+Yes
+
+
+*/
+Solution:
 import java.io.*;
 import java.math.*;
 import java.security.*;

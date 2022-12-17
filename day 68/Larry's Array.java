@@ -1,6 +1,24 @@
 /* Question:
 Larry has been given a permutation of a sequence of natural numbers incrementing 1 from  as an array. 
- He must determine whether the array can be sorted using the following operation any number of times: */
+ He must determine whether the array can be sorted using the following operation any number of times:
+ Output Format
+
+For each test case, print YES if  can be fully sorted. Otherwise, print NO.
+
+Sample Input
+
+3
+3
+3 1 2
+4
+1 3 4 2
+5
+1 2 3 5 4
+Sample Output
+
+YES
+YES
+NO*/
 
 Solution:
 import java.io.*;
